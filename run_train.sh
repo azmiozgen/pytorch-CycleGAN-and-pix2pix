@@ -13,4 +13,6 @@ python train.py \
                 --gan_mode lsgan \
                 --lr_policy plateau \
                 --lr_decay_iters 50 \
+                --continue_train \
+                --epoch_count 1 \
                 --verbose
