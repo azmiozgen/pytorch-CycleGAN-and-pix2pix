@@ -1,0 +1,16 @@
+python train.py \
+                --dataroot ./datasets/artworks50 \
+                --name artworks50 \
+                --model cycle_gan \
+                --dataset_mode artworks50 \
+                --max_dataset_size 20000 \
+                --save_by_iter \
+                --save_latest_freq 1000 \
+                --save_epoch_freq 1 \
+                --phase train \
+                --n_epochs 100 \
+                --lr 2e-4 \
+                --gan_mode lsgan \
+                --lr_policy plateau \
+                --lr_decay_iters 50 \
+                --verbose
